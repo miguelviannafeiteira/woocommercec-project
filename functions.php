@@ -1,5 +1,8 @@
 <?php
-
+register_nav_menus([
+  'categorias'=>'Categorias'
+  ]);
+  
 //  da suporte ao tema do woocommerce 
 function helo_add_woocommerce_support(){
   add_theme_support( 'woocommerce' );
