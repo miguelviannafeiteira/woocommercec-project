@@ -1,0 +1,82 @@
+.header {
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: minmax(160px, auto) minmax(auto, 600px) minmax(280px, auto) ;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 40px;
+}
+
+@media (max-width:800px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.searching form{
+  display: grid;
+}
+
+.searching #s{
+  border: 2px solid black;
+  font-size: 1.125rem;
+  border-radius: 4px;
+  padding: 12px 40px 12px 20px;
+  grid-area: 1/1;
+}
+
+.searching #search {
+  grid-area: 1/1;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  justify-self: end;
+  text-indent: -100px;
+  width: 50px;
+  background: transparent url('../icons/search.svg') no-repeat center center;
+}
+
+.account {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+}
+
+@media (max-width:800px) {
+  .account {
+    grid-gap: 40px;
+    justify-content: start;
+  }
+}
+
+.account .my-account, .account .cart {
+  padding: 5px 0px 5px 34px;
+}
+
+.account .cart {
+  background: url('../icons/cart.svg') no-repeat center left;
+  position: relative;
+}
+
+.account .my-account{
+  background: url('../icons/user.svg') no-repeat center left;
+}
+
+.cart-count {
+  display: block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background: purple;
+  font-size: .7rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   color: white;
+   position: absolute;
+   top: 0px;
+   left: 5px;
+}
