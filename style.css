@@ -7,3 +7,5 @@ Theme name: Helo
 
 @import './css/base.css';
 @import './css/header.css';
+@import './css/home.css';
+@import './css/slide.css';

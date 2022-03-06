@@ -1,0 +1,41 @@
+.slide-item{
+  display: grid;
+  grid-template-columns: 65% 35%;
+  background: black;
+}
+
+.slide-info{
+  padding: 0 20px 40px 20px;
+  color: white;
+  align-self: end;
+}
+
+.slide-price{
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(255,255,255, .5);
+  font-weight: 300;
+}
+
+.slide-name{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.slide-link{
+  padding: 15px;
+  background: white;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slide-link::after{
+  content: '';
+  display: block;
+  background: url('../icons/arrow.svg') no-repeat center center;
+  width: 18px;
+  height: 18px;
+}
