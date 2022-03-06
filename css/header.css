@@ -80,3 +80,42 @@
    top: 0px;
    left: 5px;
 }
+
+.menu-categorias{
+  background: black;
+  padding: 5px;
+}
+
+.menu-categorias ul{
+  display: flex;
+  justify-content: center;
+}
+
+.menu-categorias ul li {
+  margin: 15px 10px;
+}
+
+.menu-categorias a{
+  color: white;
+  padding: 10px;
+}
+
+.menu-categorias a:hover{
+  color: purple;
+}
+
+.current-menu-item a {
+  color: purple;
+}
+
+@media(max-width:800px){
+  .menu-categorias ul {
+    justify-content: initial;
+  }
+  .menu-categorias{
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling:touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
