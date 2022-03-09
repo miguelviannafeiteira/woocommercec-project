@@ -20,7 +20,7 @@
 
 <div>
  <h1>Autor</h1>
- <h2>Miguel Vianna Feiteira</h2>
+ <h3>Miguel Vianna Feiteira</h3>
  <p>Email: miguelviannafeiteira@gmail.com</p>
  <p>Linkedin: </p>
 </div>
