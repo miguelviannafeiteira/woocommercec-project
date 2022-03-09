@@ -1,4 +1,4 @@
-Tecnologias utilizadas
+<h1>Tecnologias utilizadas</h1>
   - Wordpress
   - PHP
   - Javascript
