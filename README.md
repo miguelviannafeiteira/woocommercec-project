@@ -13,8 +13,7 @@
 </div>
 <style>
 .imagens {
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display:flex;
 }
 </style>
 
