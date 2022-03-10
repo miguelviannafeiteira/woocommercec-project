@@ -6,10 +6,8 @@
 <div>
   <h1 align="center">Layout do Site</h1>
   <div >
-    [<img src="./layout/pagina-home.png" width=115>] |  [<img src="./layout/pagina-shop.png" width=115>] |  [<img src="./layout/pagina-produto.png" width=115>] |
+    [<img src="./layout/pagina-home.png" width=115>] |  [<img src="./layout/pagina-shop.png" width=115>] |  [<img src="./layout/pagina-produto.png" width=115>]
     <img src="./layout/pagina-home.png" width=115 display="inline-block">
-    <img src="./layout/pagina-shop.png">
-    <img src="./layout/pagina-produto.png">
   </div> 
 </div>
 <style>
