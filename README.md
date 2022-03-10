@@ -5,7 +5,7 @@
 
 <div>
   <h1 align="center">Layout do Site</h1>
-  <div display="flex" grid-template-coloums="1fr 1fr 1fr">
+  <div display="flex">
     <img src="./layout/pagina-home.png">
     <img src="./layout/pagina-shop.png">
     <img src="./layout/pagina-produto.png">
