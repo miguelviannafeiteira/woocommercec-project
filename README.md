@@ -6,6 +6,8 @@
 <div>
   <h1>Layout do Site</h1>
   <img src="./layout/pagina-home.png">
+  <img src="./layout/pagina-shop.png">
+  <img src="./layout/pagina-produto.png">
 </div>
 
 <div>
