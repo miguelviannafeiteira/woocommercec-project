@@ -5,6 +5,7 @@
 
 <div>
   <h1>Layout do Site</h1>
+  <img src="./layout/pagina-home.png">
 </div>
 
 <div>
