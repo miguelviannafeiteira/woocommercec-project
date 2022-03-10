@@ -4,21 +4,17 @@
 </div>  
 
 <div>
-  <h1">Layout do Site</h1>
-  <div>
+  <h1 align="center">Layout do Site</h1>
+  <div display="grid" grid-template-coloums="1fr 1fr 1fr">
     <img src="./layout/pagina-home.png">
     <img src="./layout/pagina-shop.png">
     <img src="./layout/pagina-produto.png">
   </div> 
 </div>
 <style>
-.imagens {
-  display:flex;
-}
-</style>
 
 <div>
-  <h1>Tecnologias utilizadas</h1>
+  <h1 align="center">Tecnologias utilizadas</h1>
   <ul>
     <li>Wordpress</li>
     <li>PHP</li>
@@ -29,7 +25,7 @@
 </div>
 
 <div>
- <h1>Autor</h1>
+ <h1 align="center">Autor</h1>
  <h3>Miguel Vianna Feiteira</h3>
  <p>Email: miguelviannafeiteira@gmail.com</p>
  <p>Linkedin: </p>
