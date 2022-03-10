@@ -6,7 +6,7 @@
 <div>
   <h1 align="center">Layout do Site</h1>
    <img src="./layout/pagina-home.png" width=500> 
-   <img src="./layout/pagina-shop.png" width=500 margin-left="100px"> 
+   <img src="./layout/pagina-shop.png" width=500 style="margin-left: 10px;> 
    <img src="./layout/pagina-produto.png" width=500>
    <img src="./layout/pagina-cart.png" width=500>
 </div>
