@@ -5,7 +5,7 @@
 
 <div>
   <h1>Layout do Site</h1>
-  <div class="imagens">
+  <div style="display:flex;">
     <img src="./layout/pagina-home.png">
     <img src="./layout/pagina-shop.png">
     <img src="./layout/pagina-produto.png">
