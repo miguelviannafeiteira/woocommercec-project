@@ -4,7 +4,7 @@
 </div>  
 
 <div>
-  <h1 align="center">Layout do Site</h1>
+  <h1 align="center" color="red">Layout do Site</h1>
   <div display="flex">
     <img src="./layout/pagina-home.png">
     <img src="./layout/pagina-shop.png">
