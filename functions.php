@@ -33,37 +33,22 @@ function helo_loop_shop_per_page(){
 }
 add_filter('loop_shop_per_page','helo_loop_shop_per_page');
 
-function format_products($products, $img_size = 'medium'){
-  $products_final = [];
-  foreach($products as $product){
-    $products_final[]=[
-      'name'=>  $product->get_name(),
-      'price'=> $product->get_price_html(),
-      'link'=> $product->get_permalink(),
-      'img'=>  wp_get_attachment_image_src($product->get_image_id(), $img_size)[0],
-    ];
+function remove_some_body_class($classes){
+  $woo_class = array_search('woocommerce', $classes);
+  $woopage_class = array_search('woocommerce-page', $classes);
+  $search =  in_array('archive', $classes) ||  in_array('product-template-default', $classes);;
+  if($woo_class && $woopage_class && $search){
+    unset($classes[$woo_class]);
+    unset($classes[$woopage_class]);
   }
-  return $products_final;
-}
-
-function helo_product_list($products){
-?>
-  <ul class="products-list">
-    <?php foreach($products as $product) {?>
-      <li class="product-item">
-        <a href="<?= $product['link']?>">
-          <div class="product-info">
-            <img src="<?= $product['img']?>" alt="<?= $product['name']?>">
-            <h2><?= $product['name']?> - <span><?= $product['price']?></span></h2>
-          </div>
-          <div class="product-overlay">
-            <span class="btn-link">Ver Mais</span>
-          </div>
-        </a>  
-    </li>
-    <?php } ?>
-  </ul>
-<?php
+  return $classes;
 };
+
+add_filter('body_class', 'remove_some_body_class');
+
+
+include(get_template_directory() . '/inc/checkout-customizado.php');
+include(get_template_directory() . '/inc/product-list.php');
+include(get_template_directory() . '/inc/user-custom-menu.php');
 
 ?>
