@@ -5,10 +5,10 @@
 
 <div>
   <h1 align="center">Layout do Site</h1>
-   <img src="./layout/pagina-home.png" width=400> 
-   <img src="./layout/pagina-shop.png" width=400> 
-   <img src="./layout/pagina-produto.png" width=00>
-   <img src="./layout/pagina-cart.png" width=400>
+   <img src="./layout/pagina-home.png" width=500> 
+   <img src="./layout/pagina-shop.png" width=500> 
+   <img src="./layout/pagina-produto.png" width=500>
+   <img src="./layout/pagina-cart.png" width=500>
 </div>
 
 <div>
