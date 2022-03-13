@@ -5,14 +5,14 @@ function helo_custom_checkout($fields){
   unset($fields['billing']['billing_phone']);
 
   $fields['billing']['billing_presente'] =  [
-    'label'=> 'Embrulhar para Presente?',
+    'label'=> "It's a gift?",
     'required'=> false,
     'class'=> ['form-row-wide'],
     'clear'=> true,
     'type' => 'select',
     'options'=>  [
-      'nao' => 'Não',
-      'sim' => 'Sim',
+      'no' => 'No',
+      'yes' => 'Yes',
     ]
   ];
 
@@ -38,19 +38,11 @@ function helo_custom_checkout_field($checkout){
     'type'=> 'textarea',
     'class' => ['form-row-wide mensagem-personalizada'],
     'label'  => 'Personalized Message',
-    'placeholder' => 'Escreva uma mensagem para a pessoa que você está presenteando',
-    'required' => true,
+    'placeholder' => 'Write a mesage for te person that you are gifting',
+    'required' => false,
   ], $checkout->get_value('mensagem_personalizada') );
 };
 add_action('woocommerce_after_order_notes', 'helo_custom_checkout_field');
-
-// valida o campo da mensagem
-function helo_custom_checkout_field_process(){
-   if(!$_POST['mensagem_personalizada']){
-    wc_add_notice('Por favor, escreve uma mensagem personalizada', 'error');
-   }
-};
-add_action('woocommerce_checkout_process',  'helo_custom_checkout_field_process');
 
 // adicionar ao banco de dados
 function helo_custom_checkout_field_update($order_id){

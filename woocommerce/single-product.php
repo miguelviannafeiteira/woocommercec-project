@@ -1,21 +1,20 @@
 <?php get_header();?>
 
 <?php
-function format_single_product($id,$img_size='medium'){
+function format_single_product($id,$img_size = 'medium'){
   $product = wc_get_product($id);
-
-$gallery_ids = $product->get_gallery_attachment_ids();
-$gallery = [];
-if($gallery_ids){
-  foreach($gallery_ids as $img_id){
-    $gallery[] = wp_get_attachment_image_src($img_id, $img_size)[0];
+  $gallery_ids = $product->get_gallery_attachment_ids();
+  $gallery = [];
+  if($gallery_ids){
+    foreach($gallery_ids as $img_id){
+      $gallery[] = wp_get_attachment_image_src($img_id, $img_size)[0];
   }
 }
 
   return [
     'id'=>$id,
     'name'=>$product->get_name(),
-    'price'=>$product->get_price(),
+    'price'=> $product->get_price_html(),
     'link'=>$product->get_permalink(),
     'sku'=>$product->get_sku(),
     'description'=>$product->get_description(),
